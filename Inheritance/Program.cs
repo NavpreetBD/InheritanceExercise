@@ -29,11 +29,43 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            Bird raven = new Bird();
+            raven.CanFly = true;
+            raven.CanSing = true;
+            raven.HasBrain = true;
+            raven.HasTail = true;
+            raven.HasFeather = true;
+            raven.WingSpanInCentimeters = 20.5;
+
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+
+            
+            Reptile snake = new Reptile() // object initilizer syntax
+            { 
+                ColdBlooded = true, 
+                IsSlimy = true, 
+                Sheds = true, 
+                IsVenimous = true
+            };
+
+            // to execute the method, now we gonna call that
+
+            //Console.WriteLine(raven.PrintBirdDetails()); , method type is void so returning nothing
+
+            raven.PrintBirdDetails();
+
+            snake.PrintReptileDetails();
+           
+
+
+
+
+
         }
     }
 }
